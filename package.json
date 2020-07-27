@@ -1,26 +1,16 @@
 {
-  "name": "tsnode-demo",
+  "name": "Node-API-Auth",
   "version": "1.0.0",
-  "description": "TypeScript 项目模板",
-  "main": "index.js",
+  "description": "Node API 接口鉴权",
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "ts-node-dev src/index.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zonglu666/tsnode-demo.git"
-  },
   "author": "Zonglu",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zonglu666/tsnode-demo/issues"
-  },
-  "homepage": "https://github.com/zonglu666/tsnode-demo#readme",
-  "dependencies": {
-    "typescript": "^3.9.7"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "typescript": "^3.9.7",
     "ts-node": "^8.10.2"
   }
 }
