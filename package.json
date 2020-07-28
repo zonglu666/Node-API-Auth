@@ -8,9 +8,14 @@
   },
   "author": "Zonglu",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/lodash": "^4.14.158",
+    "@types/node-rsa": "^1.0.0",
+    "lodash": "^4.17.19",
+    "node-rsa": "^1.1.1"
+  },
   "devDependencies": {
-    "typescript": "^3.9.7",
-    "ts-node": "^8.10.2"
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   }
 }
