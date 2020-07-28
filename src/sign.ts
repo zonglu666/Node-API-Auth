@@ -1,6 +1,6 @@
 import config from './config';
-import * as NodeRSA from 'node-rsa';
-import * as crypto from 'crypto';
+import NodeRSA from 'node-rsa';
+import crypto from 'crypto';
 import _ from 'lodash';
 
 function hmacSha256(string: string) {
@@ -41,7 +41,7 @@ function signWithPrivateKey(privateKey: string, params: any = {}) {
   return signature;
 }
 
-function verifyWithPublicKey(publicKey, signature) {
+function verifyWithPublicKey(publicKey: string, signature: string) {
   const key = new NodeRSA(publicKey);
   return key.verify(new Buffer(signature), signature, 'buffer', 'base64');
 }

@@ -1,4 +1,4 @@
-import * as NodeRSA from 'node-rsa';
+import NodeRSA from 'node-rsa';
 import config from './config';
 
 const key = new NodeRSA({ b: 2048 });
