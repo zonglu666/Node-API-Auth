@@ -1,12 +1,6 @@
 import config from './config';
 import NodeRSA from 'node-rsa';
-import crypto from 'crypto';
 import _ from 'lodash';
-
-function hmacSha256(string: string) {
-  const buffer = crypto.createHash('sha256').update(string).digest('hex');
-  return buffer;
-}
 
 function generateStringToSign(params: any = {}) {
   function stringCompare(str1: string, str2: string): number {
