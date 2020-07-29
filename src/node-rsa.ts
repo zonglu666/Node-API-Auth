@@ -15,6 +15,7 @@ const privateKey = new NodeRSA();
 privateKey.importKey(privatePem, 'pkcs8-private-pem');
 
 const text = 'Hello RSA!';
+
 // 私钥签名
 const signature = privateKey.sign(new Buffer(text), 'base64', 'buffer');
 console.log('signature ====== ', signature);
