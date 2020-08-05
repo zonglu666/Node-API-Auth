@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Node API 接口鉴权",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon -e ts,tsx --exec ts-node src/app.ts"
+    "dev": "SERVER_ENV=prod node src/index.js "
   },
   "author": "Zonglu",
   "license": "ISC",
@@ -18,6 +17,8 @@
     "@types/request": "^2.48.5",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "crypto-js": "^4.0.0",
     "express": "^4.17.1",
     "lodash": "^4.17.19",
     "mysql": "^2.18.1",
